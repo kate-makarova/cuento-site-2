@@ -1,6 +1,6 @@
 ---
 title: Static Files and Design
-nav_order: 5
+nav_order: 6
 ---
 
 <p class="docs-lead">Cuento lets admins replace the forum's stylesheet, favicon, and static assets directly from the admin panel — no server access needed. A design-draft system lets you preview CSS changes live before publishing them.</p>

@@ -1,6 +1,6 @@
 ---
 title: Direct Message Encryption
-nav_order: 4
+nav_order: 5
 ---
 
 <p class="docs-lead">Direct messages in Cuento are end-to-end encrypted in the browser. The server stores only ciphertext — it never sees plaintext message content, and the private key required to decrypt messages never leaves the user's device.</p>

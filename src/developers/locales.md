@@ -1,6 +1,6 @@
 ---
 title: Locales
-nav_order: 6
+nav_order: 7
 ---
 
 <p class="docs-lead">Cuento ships with English and Russian. Additional locales can be created as two plain text files and installed through the admin panel — no code changes or server access required.</p>
