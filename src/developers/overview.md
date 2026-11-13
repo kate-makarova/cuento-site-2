@@ -57,15 +57,12 @@ The AI layer has two parts:
 
 **MCP server** runs on `:8081` using the `mcp-go` library. It exposes lore and search tools that any MCP-compatible AI client can call. The Cuento frontend's AI chat feature connects to this server.
 
-**AI provider** is configured via admin settings (`ai_name`, `ai_api_key`). Three backends are supported:
+**Model pool** is configured at runtime with no restart required. Two sources are supported:
 
-| Value | SDK | Notes |
-|---|---|---|
-| `claude` | `anthropic-sdk-go` | Anthropic models |
-| `gemini` | `google/genai` | Google models |
-| `openai` | `openai-go` | OpenAI models, or any OpenAI-compatible endpoint |
+- **OpenRouter** — fetches the live model catalogue from OpenRouter, filters by tool support and context window, always uses the OpenAI-compatible client regardless of the underlying model provider.
+- **DB pool** — `ai_models` table, one row per model. Columns include `api_address`, `api_key`, `machine_name`, `size` (1–4), `protocol_type` (1 = OpenAI-compat, 2 = Anthropic, 3 = Gemini), and `is_active`. Works with any OpenAI-compatible endpoint including Groq, as well as Anthropic and Gemini natively.
 
-Because the `openai` backend uses a standard OpenAI-compatible API, it works with aggregators like [OpenRouter](https://openrouter.ai) by pointing `ai_api_base` at their endpoint. This gives access to dozens of models from a single API key without changing any backend code.
+The active pool is a global `ModelPool` interface swapped atomically via `SwitchPool()`. Each task requests a model by minimum size; the pool returns the cheapest eligible one. Rate-limit retries automatically try the next available model via `ClientExcluding`.
 
 ## Frontend — Angular 19
 
