@@ -467,14 +467,13 @@ a:hover { color: var(--text); }
   display: grid;
   grid-template-columns: 260px 1fr;
   flex: 1;
-  margin-top: 60px; /* nav height */
 }
 
 .docs-sidebar {
   position: sticky;
   top: 60px;
   height: calc(100vh - 60px);
-  overflow-y: auto;
+  overflow-y: hidden;
   border-right: 1px solid var(--border);
   padding: 40px 0;
   background: var(--bg-dark);
