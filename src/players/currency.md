@@ -9,15 +9,11 @@ nav_order: 13
 
 Currency is **per user account** — not per character. All your characters share one balance.
 
-**Income is automatic.** You do not need to claim rewards; they are added to your balance when the qualifying action happens. Common income events include writing episode posts, having a character approved, or reaching post-count milestones. The exact amounts and which events are active are set by your forum's administrator and listed on the [Store](#the-store-page) page.
+**Income is automatic.** You do not need to claim rewards; they are added to your balance when the qualifying action happens. The most common source is writing episode posts — each post earns a set amount. Other events that may earn currency include having a character approved or creating a wanted character listing. Additionally, the forum may award one-time bonuses when you reach certain post-count milestones.
+
+Which income events are active and how much each pays is configured by the administrator — check the [Store](#the-store-page) page to see the current rates on your forum.
 
 **Spending is manual.** You choose when and what to spend your balance on. Currently the main use is purchasing auto-archiving immunity for a character — protecting it from being archived due to inactivity for a set period. The purchase button appears on the character's profile page.
-
----
-
-## Post-count milestones
-
-Reaching certain post counts (100, 500, and 1 000 posts in episode topics or general topics) triggers a one-time bonus. Each milestone is awarded once per threshold. If you somehow cross multiple thresholds at the same time, only the highest one is awarded.
 
 ---
 
