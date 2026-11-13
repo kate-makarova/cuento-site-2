@@ -1,6 +1,6 @@
 ---
 title: Free-Format Date Fields
-nav_order: 9
+nav_order: 10
 ---
 
 <p class="docs-lead">Some games use their own fictional calendar instead of real-world dates. When an episode header or character sheet has a free-format date field, the form shows inputs tailored to that game's calendar system, based on which characters are involved.</p>

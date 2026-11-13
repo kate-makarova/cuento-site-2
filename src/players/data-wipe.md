@@ -1,6 +1,6 @@
 ---
 title: Wiping Your Account Data
-nav_order: 6
+nav_order: 7
 ---
 
 <p class="docs-lead">If you want to permanently erase your personal data from a Cuento forum, you can do so using a recovery code — no login required. This works even if you have been banned or an administrator has changed your password.</p>

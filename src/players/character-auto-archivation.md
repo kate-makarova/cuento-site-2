@@ -1,6 +1,6 @@
 ---
 title: Character Auto-Archivation
-nav_order: 3
+nav_order: 4
 ---
 
 <p class="docs-lead">Cuento tracks activity for every character and automatically archives those that go silent for too long. The required posting interval is set by your forum's administrator — 20 days is a common default, but it may be different on the forum you are playing on.</p>

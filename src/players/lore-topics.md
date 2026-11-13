@@ -1,6 +1,6 @@
 ---
 title: Lore Topics
-nav_order: 11
+nav_order: 12
 ---
 
 <p class="docs-lead">A lore topic is a wiki-style reference page inside a subforum. Instead of a linear thread, it has a navigation sidebar linking to individual pages — perfect for faction histories, in-universe documents, worldbuilding references, or any content that benefits from organized structure.</p>

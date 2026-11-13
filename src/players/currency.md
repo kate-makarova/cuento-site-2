@@ -1,6 +1,6 @@
 ---
 title: Currency
-nav_order: 13
+nav_order: 14
 ---
 
 <p class="docs-lead">Some forums run an optional currency system that rewards you automatically for activity and lets you spend what you earn on in-forum benefits. If your forum has this feature enabled, your balance is shown in your profile and in the navigation bar.</p>

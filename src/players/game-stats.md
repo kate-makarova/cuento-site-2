@@ -1,6 +1,6 @@
 ---
 title: Game Statistics
-nav_order: 7
+nav_order: 8
 ---
 
 <p class="docs-lead">The statistics page gives everyone — including guests — a live view of forum activity. It shows six summary numbers and five charts covering posts, episodes, characters, and faction activity for any time period you choose.</p>

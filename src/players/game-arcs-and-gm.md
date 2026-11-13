@@ -1,6 +1,6 @@
 ---
 title: Game Arcs and GM Tools
-nav_order: 8
+nav_order: 9
 ---
 
 <p class="docs-lead">Game arcs group related episodes into a named story. Each arc can have dedicated Game Masters who get extra tools: a GM posting mode that lets them write narrative posts without a character, and a panel to insert named NPCs directly into those posts.</p>

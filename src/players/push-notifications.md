@@ -1,6 +1,6 @@
 ---
 title: Push Notifications
-nav_order: 2
+nav_order: 3
 ---
 
 <p class="docs-lead">Cuento supports push notifications — the same kind you get from messaging apps and banks. They let you receive alerts about new posts and messages directly on your phone's lock screen.</p>

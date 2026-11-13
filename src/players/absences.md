@@ -1,6 +1,6 @@
 ---
 title: Managing Absences
-nav_order: 12
+nav_order: 13
 ---
 
 <p class="docs-lead">If you know you will be unavailable for a period of time, you can register an absence. This pauses the auto-archiving countdown for all of your active characters and notifies your episode co-writers that you are away.</p>

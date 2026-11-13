@@ -1,6 +1,6 @@
 ---
 title: Episode List
-nav_order: 10
+nav_order: 11
 ---
 
 <p class="docs-lead">The episode list page shows every episode on the forum in a sortable, filterable table. Every filter, sort, and column choice is saved in the URL — so you can bookmark or share a link that always opens to exactly the view you configured.</p>

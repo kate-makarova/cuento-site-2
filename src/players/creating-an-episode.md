@@ -1,6 +1,6 @@
 ---
 title: Creating an Episode
-nav_order: 1
+nav_order: 2
 ---
 
 <p class="docs-lead">An episode is the core unit of play in Cuento — a thread with a cover image, participant list, in-game date, and location. Any member of a subforum can create one.</p>
