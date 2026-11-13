@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Cuento — forum software built for play-by-post roleplaying games." />
+  <title>Cuento — Play-by-Post Forum Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="#" class="nav-logo">
+      <img src="cuento-2.png" alt="Cuento" class="nav-logo-img" />
+    </a>
+    <ul class="nav-links">
+      <li><a href="#what-is-pbp">What is PbP</a></li>
+      <li><a href="#features">Why Cuento</a></li>
+      <li><a href="#gallery">Live Forums</a></li>
+    </ul>
+    <a href="https://github.com/topics/cuento" class="btn btn-ghost" target="_blank" rel="noopener">GitHub</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">Forum software for collaborative storytelling</p>
+      <h1 class="hero-title">
+        A home for your<br />
+        <em>play&#8209;by&#8209;post&nbsp;game</em>
+      </h1>
+      <p class="hero-sub">
+        Cuento is open-source forum software built from the ground up for
+        play-by-post roleplaying. Character sheets, AI narration assist,
+        end-to-end encrypted messages, and a living world — all in one place.
+      </p>
+      <div class="hero-actions">
+        <a href="#features" class="btn btn-primary">See what's inside</a>
+        <a href="#gallery" class="btn btn-ghost">Browse live forums</a>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <div class="art-frame">
+        <canvas id="constellation" class="constellation-canvas" width="280" height="280"></canvas>
+        <img src="cuento-2.png" alt="" class="hero-logo-img" />
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT IS PBP -->
+  <section class="section" id="what-is-pbp">
+    <div class="container">
+      <div class="section-label">Play-by-Post</div>
+      <h2 class="section-title">Collaborative storytelling at your own pace</h2>
+      <div class="pbp-grid">
+        <div class="pbp-text">
+          <p>
+            Play-by-post (PbP) is a form of roleplaying where participants write
+            their characters' actions, dialogue, and inner thoughts in a shared
+            thread — building a story together, one post at a time.
+          </p>
+          <p>
+            Unlike tabletop sessions that require everyone online at the same
+            moment, PbP is asynchronous. A writer in Tokyo and a writer in
+            Toronto can share the same adventure without ever needing to find a
+            common evening.
+          </p>
+          <p>
+            The format rewards craft: players edit, revise, and illustrate their
+            posts. Stories accumulate into archives that read like novels.
+            Communities grow around rich fictional worlds that can last for years.
+          </p>
+        </div>
+        <div class="pbp-callouts">
+          <div class="callout">
+            <div class="callout-icon">✦</div>
+            <div>
+              <strong>Asynchronous by nature</strong>
+              <p>Post when inspiration strikes — no session scheduling required.</p>
+            </div>
+          </div>
+          <div class="callout">
+            <div class="callout-icon">✦</div>
+            <div>
+              <strong>Writing as the medium</strong>
+              <p>Characters come alive through prose, not dice rolls alone.</p>
+            </div>
+          </div>
+          <div class="callout">
+            <div class="callout-icon">✦</div>
+            <div>
+              <strong>Living archives</strong>
+              <p>Years of collaborative fiction, searchable and preserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIVIDER -->
+  <div class="divider"></div>
+
+  <!-- WHY CUENTO -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-label">Why Cuento</div>
+      <h2 class="section-title">Not a forum. Not a wiki.<br />Something built for the game.</h2>
+      <p class="section-intro">
+        General-purpose forum software was designed for discussion threads,
+        not collaborative fiction. Cuento replaces the patchwork of plugins,
+        spreadsheets, and Discord servers that most PbP communities rely on.
+      </p>
+
+      <div class="compare-grid">
+        <div class="compare-col compare-col--other">
+          <h3>Standard forum software</h3>
+          <ul class="compare-list">
+            <li>Characters tracked in profile bios or external sheets</li>
+            <li>No concept of a "game" or "episode" — just categories</li>
+            <li>Moderation built for spam, not collaborative storytelling</li>
+            <li>No AI tools — narration notes live in a separate doc</li>
+            <li>Direct messages are plaintext and not role-aware</li>
+            <li>Search is full-text only — no semantic "find scenes like this"</li>
+            <li>Hosting means maintaining generic forum stack + plugins</li>
+          </ul>
+        </div>
+        <div class="compare-col compare-col--cuento">
+          <h3>Cuento</h3>
+          <ul class="compare-list">
+            <li>First-class character system with custom fields, masks, and galleries</li>
+            <li>Episodes and games as native objects — timelines, digests, arcs</li>
+            <li>Subforum-level permissions with per-character role rules</li>
+            <li>Built-in AI: narration assist, game digest, lore Q&A via MCP</li>
+            <li>End-to-end encrypted direct messages between characters</li>
+            <li>Semantic + full-text search across lore and posts</li>
+            <li>One-command deploy via the Cuento CLI — Caddy + MariaDB pre-configured</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIVIDER -->
+  <div class="divider"></div>
+
+  <!-- GALLERY PLACEHOLDER -->
+  <section class="section section--dark" id="gallery">
+    <div class="container">
+      <div class="section-label">Live Forums</div>
+      <h2 class="section-title">Communities running on Cuento</h2>
+      <p class="section-intro">
+        Forums listed here are live Cuento instances whose administrators have
+        opted in to the directory. Each link opens the community's public homepage.
+      </p>
+
+      <!-- GALLERY GRID — replace cards with real entries -->
+      <div class="gallery-grid">
+        <div class="gallery-placeholder">
+          <p>Gallery coming soon.</p>
+          <p class="gallery-placeholder-sub">
+            Running a forum on Cuento? <a href="mailto:rakshata08@gmail.com">Get listed here.</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-logo">Cuento</span>
+      <span class="footer-copy">Open source. Built for stories.</span>
+      <a href="https://github.com/topics/cuento" class="footer-link" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      const canvas = document.getElementById('constellation');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+
+      const N        = 36;
+      const MAX_DIST = 110;
+      const STAR_C   = '210, 218, 226';
+      const LINE_C   = '143, 168, 184';
+
+      let W, H, particles = [];
+
+      function resize() {
+        W = canvas.width  = canvas.offsetWidth;
+        H = canvas.height = canvas.offsetHeight;
+      }
+
+      function makeParticle() {
+        return {
+          x:  Math.random() * W,
+          y:  Math.random() * H,
+          vx: (Math.random() - 0.5) * 0.22,
+          vy: (Math.random() - 0.5) * 0.22,
+          r:  Math.random() * 1.3 + 0.5
+        };
+      }
+
+      function init() {
+        resize();
+        particles = [];
+        for (let i = 0; i < N; i++) particles.push(makeParticle());
+      }
+
+function tick() {
+        ctx.clearRect(0, 0, W, H);
+
+        // Dark circle fill
+        ctx.beginPath();
+        ctx.arc(W / 2, H / 2, Math.min(W, H) / 2 - 0.5, 0, Math.PI * 2);
+        ctx.fillStyle = '#0c0d0f';
+        ctx.fill();
+
+        // Constellation — drawn first so the C sits on top
+        for (let i = 0; i < N; i++) {
+          const p = particles[i];
+          p.x += p.vx;
+          p.y += p.vy;
+          if (p.x < 0 || p.x > W) p.vx *= -1;
+          if (p.y < 0 || p.y > H) p.vy *= -1;
+
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+          ctx.fillStyle = `rgba(${STAR_C}, 0.9)`;
+          ctx.fill();
+
+          for (let j = i + 1; j < N; j++) {
+            const q = particles[j];
+            const dx = p.x - q.x, dy = p.y - q.y;
+            const d  = Math.sqrt(dx * dx + dy * dy);
+            if (d < MAX_DIST) {
+              ctx.beginPath();
+              ctx.moveTo(p.x, p.y);
+              ctx.lineTo(q.x, q.y);
+              ctx.strokeStyle = `rgba(${LINE_C}, ${(1 - d / MAX_DIST) * 0.38})`;
+              ctx.lineWidth = 0.6;
+              ctx.stroke();
+            }
+          }
+        }
+
+        requestAnimationFrame(tick);
+      }
+
+      init();
+      window.addEventListener('resize', init);
+      tick();
+    })();
+  </script>
+</body>
+</html>
