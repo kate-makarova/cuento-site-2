@@ -22,13 +22,13 @@
     </a>
     <ul class="nav-links">
       {% if locale == 'ru' %}
-      <li><a href="{{ '/ru/developers/local-setup.html' | url }}"{% if section == 'developers' %} class="nav-link-active"{% endif %}>Разработчикам</a></li>
-      <li><a href="{{ '/ru/admins/initial-setup.html' | url }}"{% if section == 'admins' %} class="nav-link-active"{% endif %}>Администраторам</a></li>
       <li><a href="{{ '/ru/players/getting-started.html' | url }}"{% if section == 'players' %} class="nav-link-active"{% endif %}>Игрокам</a></li>
+      <li><a href="{{ '/ru/admins/initial-setup.html' | url }}"{% if section == 'admins' %} class="nav-link-active"{% endif %}>Администраторам</a></li>
+      <li><a href="{{ '/ru/developers/local-setup.html' | url }}"{% if section == 'developers' %} class="nav-link-active"{% endif %}>Разработчикам</a></li>
       {% else %}
-      <li><a href="{{ '/developers/local-setup.html' | url }}"{% if section == 'developers' %} class="nav-link-active"{% endif %}>For Developers</a></li>
-      <li><a href="{{ '/admins/initial-setup.html' | url }}"{% if section == 'admins' %} class="nav-link-active"{% endif %}>For Administrators</a></li>
       <li><a href="{{ '/players/getting-started.html' | url }}"{% if section == 'players' %} class="nav-link-active"{% endif %}>For Players</a></li>
+      <li><a href="{{ '/admins/initial-setup.html' | url }}"{% if section == 'admins' %} class="nav-link-active"{% endif %}>For Administrators</a></li>
+      <li><a href="{{ '/developers/local-setup.html' | url }}"{% if section == 'developers' %} class="nav-link-active"{% endif %}>For Developers</a></li>
       {% endif %}
     </ul>
     <div class="lang-switch">

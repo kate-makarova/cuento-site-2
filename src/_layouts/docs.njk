@@ -22,6 +22,7 @@ bodyClass: docs-page
   <aside class="docs-sidebar">
     <nav class="docs-nav">
 
+      {% if section == 'developers' %}
       <div class="docs-nav-group">
         <div class="docs-nav-group-label">{{ labelDev }}</div>
         <ul class="docs-nav-list">
@@ -30,7 +31,7 @@ bodyClass: docs-page
           {% endfor %}
         </ul>
       </div>
-
+      {% elif section == 'admins' %}
       <div class="docs-nav-group">
         <div class="docs-nav-group-label">{{ labelAdmin }}</div>
         <ul class="docs-nav-list">
@@ -39,7 +40,7 @@ bodyClass: docs-page
           {% endfor %}
         </ul>
       </div>
-
+      {% elif section == 'players' %}
       <div class="docs-nav-group">
         <div class="docs-nav-group-label">{{ labelPlayer }}</div>
         <ul class="docs-nav-list">
@@ -48,6 +49,7 @@ bodyClass: docs-page
           {% endfor %}
         </ul>
       </div>
+      {% endif %}
 
     </nav>
   </aside>
