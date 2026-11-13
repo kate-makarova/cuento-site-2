@@ -396,7 +396,7 @@ a:hover { color: var(--text); }
 .gallery-card-img {
   display: block;
   width: 100%;
-  aspect-ratio: 16 / 9;
+  height: 400px;
   object-fit: cover;
   object-position: top;
 }
