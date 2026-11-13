@@ -2,34 +2,49 @@
 layout: base.njk
 bodyClass: docs-page
 ---
+{% if locale == 'ru' %}
+{% set devCollection = collections.ruDevDocs %}
+{% set adminCollection = collections.ruAdminDocs %}
+{% set playerCollection = collections.ruPlayerDocs %}
+{% set labelDev = "Разработчикам" %}
+{% set labelAdmin = "Администраторам" %}
+{% set labelPlayer = "Игрокам" %}
+{% else %}
+{% set devCollection = collections.devDocs %}
+{% set adminCollection = collections.adminDocs %}
+{% set playerCollection = collections.playerDocs %}
+{% set labelDev = "For Developers" %}
+{% set labelAdmin = "For Administrators" %}
+{% set labelPlayer = "For Players" %}
+{% endif %}
 <div class="docs-layout">
 
   <aside class="docs-sidebar">
     <nav class="docs-nav">
 
       <div class="docs-nav-group">
-        <div class="docs-nav-group-label">For Developers</div>
+        <div class="docs-nav-group-label">{{ labelDev }}</div>
         <ul class="docs-nav-list">
-          {% for item in collections.devDocs %}
-          <li><a href="{{ item.url }}" class="docs-nav-item{% if page.url == item.url %} active{% endif %}">{{ item.data.title }}</a></li>
+          {% for item in devCollection %}
+          <li><a href="{{ item.url | url }}" class="docs-nav-item{% if page.url == item.url %} active{% endif %}">{{ item.data.title }}</a></li>
           {% endfor %}
         </ul>
       </div>
 
       <div class="docs-nav-group">
-        <div class="docs-nav-group-label">For Administrators</div>
+        <div class="docs-nav-group-label">{{ labelAdmin }}</div>
         <ul class="docs-nav-list">
-          {% for item in collections.adminDocs %}
-          <li><a href="{{ item.url }}" class="docs-nav-item{% if page.url == item.url %} active{% endif %}">{{ item.data.title }}</a></li>
+          {% for item in adminCollection %}
+          <li><a href="{{ item.url | url }}" class="docs-nav-item{% if page.url == item.url %} active{% endif %}">{{ item.data.title }}</a></li>
           {% endfor %}
         </ul>
       </div>
 
       <div class="docs-nav-group">
-        <div class="docs-nav-group-label">For Players</div>
+        <div class="docs-nav-group-label">{{ labelPlayer }}</div>
         <ul class="docs-nav-list">
-          {% for item in collections.playerDocs %}
-          <li><a href="{{ item.url }}" class="docs-nav-item{% if page.url == item.url %} active{% endif %}">{{ item.data.title }}</a></li>
+          {% for item in playerCollection %}
+          <li><a href="{{ item.url | url }}" class="docs-nav-item{% if page.url == item.url %} active{% endif %}">{{ item.data.title }}</a></li>
           {% endfor %}
         </ul>
       </div>

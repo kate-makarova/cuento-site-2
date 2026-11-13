@@ -584,6 +584,29 @@ a:hover { color: var(--text); }
   color: var(--text) !important;
 }
 
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.lang-switch a {
+  color: var(--text-dim);
+  letter-spacing: 0.04em;
+}
+.lang-switch a:hover { color: var(--text-mid); }
+
+.lang-active {
+  color: var(--text-mid) !important;
+}
+
+.lang-sep {
+  color: var(--text-dim);
+  font-size: 11px;
+}
+
 /* ── Responsive ───────────────────────────────────────── */
 @media (max-width: 860px) {
   .hero {

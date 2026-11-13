@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ locale or 'en' }}">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,10 +18,21 @@
       <span class="nav-logo-text">Cuento</span>
     </a>
     <ul class="nav-links">
+      {% if locale == 'ru' %}
+      <li><a href="{{ '/ru/developers/local-setup.html' | url }}"{% if section == 'developers' %} class="nav-link-active"{% endif %}>Разработчикам</a></li>
+      <li><a href="{{ '/ru/admins/initial-setup.html' | url }}"{% if section == 'admins' %} class="nav-link-active"{% endif %}>Администраторам</a></li>
+      <li><a href="{{ '/ru/players/getting-started.html' | url }}"{% if section == 'players' %} class="nav-link-active"{% endif %}>Игрокам</a></li>
+      {% else %}
       <li><a href="{{ '/developers/local-setup.html' | url }}"{% if section == 'developers' %} class="nav-link-active"{% endif %}>For Developers</a></li>
       <li><a href="{{ '/admins/initial-setup.html' | url }}"{% if section == 'admins' %} class="nav-link-active"{% endif %}>For Administrators</a></li>
       <li><a href="{{ '/players/getting-started.html' | url }}"{% if section == 'players' %} class="nav-link-active"{% endif %}>For Players</a></li>
+      {% endif %}
     </ul>
+    <div class="lang-switch">
+      <a href="{{ '/' | url }}"{% if locale != 'ru' %} class="lang-active"{% endif %}>EN</a>
+      <span class="lang-sep">·</span>
+      <a href="{{ '/ru/' | url }}"{% if locale == 'ru' %} class="lang-active"{% endif %}>RU</a>
+    </div>
     <a href="https://github.com/topics/cuento" class="btn btn-ghost" target="_blank" rel="noopener">GitHub</a>
   </nav>
 
