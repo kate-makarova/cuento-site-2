@@ -80,4 +80,6 @@ The global calendar is added to the available options alongside any faction-spec
 
 Dates stored in a free-format field are sortable. The platform encodes the placeholder values into a sortable integer (BIGINT) so that episode lists can be ordered chronologically by in-game date, even when the calendar system has no correspondence to real-world time.
 
+This sort is exposed on the **Episode List** page — players can sort the episode table by any free-format date column you have added to the episode header template. This means your community can browse all active games in in-world chronological order rather than by creation date or last activity.
+
 The sort is based on the values of the placeholders in position order. This means the placeholder marked as position 0 is the most significant (like a year), and later positions are less significant. Set up your time units accordingly if chronological sorting matters for your game.

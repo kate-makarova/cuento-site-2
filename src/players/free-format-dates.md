@@ -48,6 +48,8 @@ Each placeholder in the format is one input:
 
 After saving, the values you filled in are assembled into a formatted string — for example, `9:41 Dragon, 15 of Drakonis (Nubulis)` — and that is what appears in the episode header or on the character sheet. The raw placeholder values are retained internally so the date can be used for sorting.
 
+The **Episode List** page can sort episodes by this date column, letting everyone browse all active games in in-world chronological order. See the [Episode List](episode-list.html) article for details on sorting and filtering.
+
 If you go back to edit the episode or character later, the form will re-load the same values and let you change them.
 
 ## Editing a date from a different character combination
