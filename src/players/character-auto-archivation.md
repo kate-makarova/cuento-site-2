@@ -1,13 +1,13 @@
 ---
-title: Absence Tracking
+title: Character Auto-Archivation
 nav_order: 3
 ---
 
-<p class="docs-lead">Cuento tracks activity for every character. By default, players are expected to write at least one post per character every 20 days. The rule has several important caveats.</p>
+<p class="docs-lead">Cuento tracks activity for every character and automatically archives those that go silent for too long. The required posting interval is set by your forum's administrator — 20 days is a common default, but it may be different on the forum you are playing on.</p>
 
 ## When the counter starts
 
-The 20-day clock starts from the moment your character **has somewhere to write** — that is, they are in at least one active episode where it is currently their turn.
+The clock starts from the moment your character **has somewhere to write** — that is, they are in at least one active episode where it is currently their turn.
 
 If your character is in one or more episodes but cannot respond in any of them right now, the counter is paused.
 
@@ -17,7 +17,7 @@ If your character is in one or more episodes but cannot respond in any of them r
 
 The counter also applies to new characters and to characters who have no active episodes at all. If you have no active games, you need to find one and open it.
 
-If your last active episode closed and you have no new ones, the counter resets: you have 20 days again from the moment that last game closed.
+If your last active episode closes and you have no new ones, the counter resets from the moment that last game closed.
 
 ## Declaring an absence
 
@@ -25,4 +25,4 @@ When you declare an absence, the counter pauses and resumes from the same value 
 
 ## Buying extra days with forum currency
 
-If you have forum currency, you can purchase additional days. One day costs **10 feathers**.
+If your forum has the currency feature enabled, you can purchase additional days. One day costs **10 feathers**.
