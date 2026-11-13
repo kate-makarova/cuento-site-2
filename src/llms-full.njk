@@ -1,0 +1,40 @@
+---
+permalink: /llms-full.txt
+eleventyExcludeFromCollections: true
+---
+# Cuento — Full Documentation
+
+> Open-source forum software for play-by-post roleplaying communities.
+> Source: https://cuento.ca | Index: https://cuento.ca/llms.txt
+
+---
+{% for item in collections.devDocs %}
+
+## {{ item.data.title | safe }} (For Developers)
+
+URL: https://cuento.ca{{ item.url }}
+
+{{ item.content }}
+
+---
+{% endfor %}
+{% for item in collections.adminDocs %}
+
+## {{ item.data.title | safe }} (For Administrators)
+
+URL: https://cuento.ca{{ item.url }}
+
+{{ item.content }}
+
+---
+{% endfor %}
+{% for item in collections.playerDocs %}
+
+## {{ item.data.title | safe }} (For Players)
+
+URL: https://cuento.ca{{ item.url }}
+
+{{ item.content }}
+
+---
+{% endfor %}

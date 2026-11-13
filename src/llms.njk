@@ -1,0 +1,30 @@
+---
+permalink: /llms.txt
+eleventyExcludeFromCollections: true
+---
+# Cuento
+
+> Open-source forum software for play-by-post roleplaying communities.
+
+Cuento is a full-stack forum platform (Go backend, Angular 19 frontend) purpose-built for play-by-post (PbP) roleplaying. Key features: first-class character system with custom fields and masks, episodes and games as native objects, subforum-level ACL permissions, built-in AI narration assist and game digest (Claude/Gemini/OpenAI), end-to-end encrypted direct messages, semantic and full-text search (Sonic + Qdrant), and one-command VPS deploy via the Cuento CLI.
+
+Source code: https://github.com/topics/cuento
+
+## For Developers
+{% for item in collections.devDocs %}
+- [{{ item.data.title | safe }}](https://cuento.ca{{ item.url }})
+{%- endfor %}
+
+## For Administrators
+{% for item in collections.adminDocs %}
+- [{{ item.data.title | safe }}](https://cuento.ca{{ item.url }})
+{%- endfor %}
+
+## For Players
+{% for item in collections.playerDocs %}
+- [{{ item.data.title | safe }}](https://cuento.ca{{ item.url }})
+{%- endfor %}
+
+## Optional
+
+- [Full documentation](https://cuento.ca/llms-full.txt): All documentation articles concatenated in full
