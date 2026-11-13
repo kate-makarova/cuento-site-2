@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="{{ description or 'Cuento — forum software built for play-by-post roleplaying games.' }}" />
+  <title>{% if title %}{{ title }} — {% endif %}Cuento</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ '/styles.css' | url }}" />
+</head>
+<body{% if bodyClass %} class="{{ bodyClass }}"{% endif %}>
+
+  <nav class="nav">
+    <a href="{{ '/' | url }}" class="nav-logo">
+      <img src="{{ '/cuento-2.png' | url }}" alt="Cuento" class="nav-logo-img" />
+      <span class="nav-logo-text">Cuento</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="{{ '/developers/local-setup.html' | url }}"{% if section == 'developers' %} class="nav-link-active"{% endif %}>For Developers</a></li>
+      <li><a href="{{ '/admins/initial-setup.html' | url }}"{% if section == 'admins' %} class="nav-link-active"{% endif %}>For Administrators</a></li>
+      <li><a href="{{ '/players/getting-started.html' | url }}"{% if section == 'players' %} class="nav-link-active"{% endif %}>For Players</a></li>
+    </ul>
+    <a href="https://github.com/topics/cuento" class="btn btn-ghost" target="_blank" rel="noopener">GitHub</a>
+  </nav>
+
+  {{ content | safe }}
+
+</body>
+</html>
