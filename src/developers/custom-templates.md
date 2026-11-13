@@ -1,6 +1,6 @@
 ---
 title: Custom Templates
-nav_order: 2
+nav_order: 3
 ---
 
 <p class="docs-lead">Cuento lets you override the HTML structure of specific Angular components at build time — without touching the default templates in the repository. This lets each forum have its own visual layout for key pages while staying on the upstream codebase.</p>
