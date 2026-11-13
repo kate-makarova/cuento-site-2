@@ -85,3 +85,7 @@ This is how Sonic indexing, Qdrant embedding, push notifications, and WebSocket 
 ## Deployment — Cuento CLI
 
 The CLI walks through a 21-step wizard that forks the repos to your GitHub account, configures GitHub Actions for CI/CD, provisions a VPS, and installs the full production stack: **Caddy** as a reverse proxy, **MariaDB**, and the Go backend as a systemd service. After the initial setup, deployments are triggered by pushing to the `release` branch — no SSH into production required.
+
+## License
+
+Cuento is released under the **Apache License 2.0**. You are free to use, modify, and distribute it — including for commercial purposes — provided you include the original copyright notice and license text. The license does not grant permission to use the Cuento name or trademarks. Full terms: [apache.org/licenses/LICENSE-2.0](https://www.apache.org/licenses/LICENSE-2.0).
