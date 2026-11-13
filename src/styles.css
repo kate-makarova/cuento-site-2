@@ -140,7 +140,7 @@ a:hover { color: var(--text); }
   grid-template-columns: 1fr 1fr;
   gap: 48px;
   align-items: center;
-  min-height: calc(100vh - 60px);
+  min-height: unset;
   max-width: 1100px;
   margin: 0 auto;
   padding: 80px 24px 100px;
