@@ -49,6 +49,8 @@ All active characters on the forum are listed on the character list page, groupe
 
 ## Masks
 
-For episode writing, you can create **masks** — alternative identities for a character to use within a specific episode. A mask has its own name and avatar, letting a character appear under a different identity (a disguise, an alias, an NPC voice) without creating a separate character.
+For episode writing, you can create **masks** — separate identities that exist independently of your main characters. A mask has its own name, avatar, and stats, and is listed on your user profile alongside your characters.
 
-Masks are attached to a character and can be assigned to episodes that character participates in. Outside of those episodes, the character's main identity is used as normal.
+Masks are intentionally not listed on the public character list. This means multiple players can hold a mask of the same character — useful for shared NPCs, recurring antagonists, or any role that more than one writer might voice across different episodes.
+
+Masks can only be used in episodes, not in general topics.
