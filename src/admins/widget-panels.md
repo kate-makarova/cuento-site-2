@@ -33,7 +33,6 @@ Widgets are reusable content blocks created at **Admin → Widgets**. Each widge
 
 Displays the most recent post from a specific topic, rendered as HTML. Useful for a pinned announcement, a rules summary, or any content that is managed as a topic post but should appear on every page.
 
-**Configuration:**
 - **Topic** — the topic to pull the latest post from.
 
 ---
