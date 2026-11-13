@@ -2,6 +2,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/styles.css");
   eleventyConfig.addPassthroughCopy("src/cuento-2.png");
   eleventyConfig.addPassthroughCopy("src/dominion.png");
+  eleventyConfig.addPassthroughCopy("src/cruce.png");
   eleventyConfig.addPassthroughCopy("src/cuento-2-trimmed.png");
   eleventyConfig.addPassthroughCopy("src/favicon.svg");
   eleventyConfig.addPassthroughCopy("src/favicon.ico");
