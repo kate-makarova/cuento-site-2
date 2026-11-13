@@ -1,6 +1,6 @@
 ---
 title: Absence Tracking
-nav_order: 2
+nav_order: 3
 ---
 
 <p class="docs-lead">Cuento tracks activity for every character. By default, players are expected to write at least one post per character every 20 days. The rule has several important caveats.</p>

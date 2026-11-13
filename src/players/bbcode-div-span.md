@@ -1,6 +1,6 @@
 ---
 title: DIV and SPAN Tags
-nav_order: 4
+nav_order: 5
 ---
 
 <p class="docs-lead">The <code>[div]</code> and <code>[span]</code> BBCode tags let you apply arbitrary CSS styling to any block of content or inline text. Both accept a <code>style</code> attribute with semicolon-separated CSS declarations.</p>

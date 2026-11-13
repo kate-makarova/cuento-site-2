@@ -1,6 +1,6 @@
 ---
 title: Migrating Your Game
-nav_order: 3
+nav_order: 4
 ---
 
 <p class="docs-lead">The migration tool lets you import an existing game episode from another platform into Cuento. MyBB-based forums are currently supported. It copies the original posts, lets you map old nicknames to characters on your forum, and publishes the thread as a new episode — preserving authorship, order, and content.</p>
