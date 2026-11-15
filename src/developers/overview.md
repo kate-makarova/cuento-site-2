@@ -10,7 +10,7 @@ nav_order: 0
 | Repo | Language | Role |
 |---|---|---|
 | `cuento-backend` | Go 1.26 | REST API, MCP server, all business logic |
-| `cuento-frontend` | TypeScript / Angular 19 | Single-page app, served as static files |
+| `cuento-frontend` | TypeScript / Angular 22 | Single-page app, served as static files |
 | `cuento-cli` | Go | Interactive VPS deployment and management tool |
 
 The frontend proxies all API calls to `localhost:8080` during development. In production, Caddy handles routing: `/api/*` goes to the Go backend, everything else serves the Angular build.
@@ -64,7 +64,7 @@ The AI layer has two parts:
 
 The active pool is a global `ModelPool` interface swapped atomically via `SwitchPool()`. Each task requests a model by minimum size; the pool returns the cheapest eligible one. Rate-limit retries automatically try the next available model via `ClientExcluding`.
 
-## Frontend — Angular 19
+## Frontend — Angular 22
 
 The frontend is signals-first. State is managed with `signal()`, `computed()`, and `effect()` — avoid mixing signals with `BehaviorSubject` for the same piece of state.
 
