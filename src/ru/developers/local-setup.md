@@ -148,6 +148,28 @@ docker compose exec -T app printenv SUPERUSER_ID   # ожидается 2
 
 Наконец, **выйдите из учётной записи и войдите снова**, чтобы новая роль вступила в силу. Панель администратора находится по адресу `http://localhost:4200/admin`.
 
+## Запуск тестов бэкенда
+
+Тесты обработчиков в `cuento-backend/test/` работают с настоящей базой MariaDB `cuento_test` в том же контейнере `db`, что и база для разработки. Создайте её один раз:
+
+```bash
+docker compose exec -T db mariadb -uroot -prootpassword -e \
+  "CREATE DATABASE IF NOT EXISTS cuento_test; GRANT ALL ON cuento_test.* TO 'user'@'%';"
+```
+
+Затем запустите тесты. Устанавливать Go на компьютер не нужно — образ `golang` подключается к сети compose и обращается к базе по имени `db`:
+
+```bash
+docker run --rm --network cuento-backend_default -e DB_HOST=db \
+  -v "$PWD":/src -w /src golang:1.26-alpine go test ./test/
+```
+
+Если Go установлен локально, можно запустить `go test ./test/` из каталога `cuento-backend` (подключение к `localhost:3306`).
+
+- Тесты читают `DB_HOST`, `DB_PORT`, `DB_USER` и `DB_PASSWORD`, но имя базы всегда `cuento_test`. База `cuento` не затрагивается.
+- Каждый тест пересоздаёт `cuento_test` из `src/Install/default_tables.sql` и `permissions.csv`, поэтому её содержимое можно не беречь.
+- Если база недоступна, тесты с базой **пропускаются** с предупреждением, а `go test` всё равно сообщает `ok`. Проверяйте вывод, прежде чем считать прогон успешным.
+
 ## Сброс и решение проблем
 
 - **`docker compose down -v` удаляет том с базой данных**, включая все зарегистрированные учётные записи. Если нужно сбросить схему после того, как кто-то зарегистрировался, сначала сохраните строки из `users` и `user_role`.

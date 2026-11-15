@@ -148,6 +148,28 @@ The override file is not ignored by git — do not commit it.
 
 Finally, **log out and log back in** so the new role takes effect. The admin panel is at `http://localhost:4200/admin`.
 
+## Running the backend tests
+
+Handler tests in `cuento-backend/test/` run against a real MariaDB database named `cuento_test`, in the same `db` container as your development database. Create it once:
+
+```bash
+docker compose exec -T db mariadb -uroot -prootpassword -e \
+  "CREATE DATABASE IF NOT EXISTS cuento_test; GRANT ALL ON cuento_test.* TO 'user'@'%';"
+```
+
+Then run the tests. Go does not need to be installed on the host — the `golang` image joins the compose network and reaches the database as `db`:
+
+```bash
+docker run --rm --network cuento-backend_default -e DB_HOST=db \
+  -v "$PWD":/src -w /src golang:1.26-alpine go test ./test/
+```
+
+With Go installed locally, `go test ./test/` from `cuento-backend` works too (it connects to `localhost:3306`).
+
+- The tests read `DB_HOST`, `DB_PORT`, `DB_USER` and `DB_PASSWORD`, but the database name is always `cuento_test`. They never touch `cuento`.
+- Every test rebuilds `cuento_test` from `src/Install/default_tables.sql` and `permissions.csv`, so its contents are disposable.
+- If the database is unreachable, the database tests are **skipped** with a warning and `go test` still reports `ok`. Check the output before treating a run as green.
+
 ## Resetting and troubleshooting
 
 - **`docker compose down -v` deletes the database volume**, including every registered account. If you need to reset the schema after someone has registered, back up the `users` and `user_role` rows first.
