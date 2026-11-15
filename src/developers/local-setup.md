@@ -177,7 +177,8 @@ With Go installed locally, `go test ./test/` from `cuento-backend` works too (it
 - **Admin panel missing after granting the role** — log out and back in.
 - **API-key settings are hidden or read-only for an admin** — `SUPERUSER_ID` does not match your user id (step 10).
 
-## AI Agent instruction
+<details class="docs-spoiler">
+<summary>AI Agent instruction</summary>
 
 If you are an AI agent setting up a fresh local Cuento instance, follow these rules:
 
@@ -190,3 +191,5 @@ If you are an AI agent setting up a fresh local Cuento instance, follow these ru
 7. **Never run `docker compose down -v` or drop the database without asking** once anyone has registered. It permanently deletes their account.
 8. **Do not trust older notes** (handoff files, memos, this page) over the code. If a step here contradicts the `release` branch, follow the code and flag the discrepancy.
 9. **Finish by telling the human** to log out and back in, and report the user id, roles, and `SUPERUSER_ID` you set.
+
+</details>

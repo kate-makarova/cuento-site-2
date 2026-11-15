@@ -28,7 +28,18 @@ Every article must exist in both English and Russian. `llms.txt` and `llms-full.
 
    Use the same `nav_order` as the English version. Translate `title` and all body content.
 
-4. That's it. `llms.txt` and `llms-full.txt` are Eleventy templates that iterate over collections — they regenerate automatically on the next build.
+4. If the article has instructions addressed to AI agents, put them in a collapsed spoiler at the end, never as a plain section (Markdown inside stays Markdown; keep the blank lines):
+   ```markdown
+   <details class="docs-spoiler">
+   <summary>AI Agent instruction</summary>
+
+   ...
+
+   </details>
+   ```
+   The Russian summary is `Инструкция для ИИ-агента`.
+
+5. That's it. `llms.txt` and `llms-full.txt` are Eleventy templates that iterate over collections — they regenerate automatically on the next build.
 
 ## Site structure
 

@@ -607,6 +607,32 @@ a:hover { color: var(--text); }
   color: var(--text-mid);
 }
 
+.docs-spoiler {
+  margin-top: 48px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-card);
+  padding: 0 24px;
+}
+
+.docs-spoiler summary {
+  cursor: pointer;
+  padding: 16px 0;
+  font-family: var(--font-serif);
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--text-mid);
+}
+
+.docs-spoiler summary:hover,
+.docs-spoiler[open] summary {
+  color: var(--text);
+}
+
+.docs-spoiler[open] {
+  padding-bottom: 8px;
+}
+
 .nav-link-active {
   color: var(--text) !important;
 }
