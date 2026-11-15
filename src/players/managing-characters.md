@@ -3,7 +3,7 @@ title: Managing Characters
 nav_order: 1
 ---
 
-<p class="docs-lead">Your user account can hold as many characters as you like. Each character is a fully independent profile with its own biography, signature, stats, and episode history.</p>
+<p class="docs-lead">Your user account can hold as many characters as you like. Each character is a fully independent profile with its own biography, signature, stats, and scene history.</p>
 
 ## How many characters should you have?
 
@@ -15,7 +15,7 @@ See [Character Auto-Archivation](/players/character-auto-archivation.html) for d
 
 ## Character profiles and signatures
 
-Each character has their own profile page with a biography, appearance, and any custom fields the forum uses (faction, age, occupation, and so on). The profile is public and linked from posts, the character list, and episode pages.
+Each character has their own profile page with a biography, appearance, and any custom fields the forum uses (faction, age, occupation, and so on). The profile is public and linked from posts, the character list, and scene pages.
 
 Each character also has an individual **signature** — the block of text or images that appears at the bottom of their posts, separate from your user account's signature.
 
@@ -25,7 +25,7 @@ Each character also has an individual **signature** — the block of text or ima
 
 When writing a post in a **general topic**, you can switch freely between any of your active characters. The post will appear as coming from whichever character you select.
 
-In a **game episode**, you can only post as characters who are listed as participants in that episode. The character selector is limited to your participating characters for that specific episode.
+In a **game scene**, you can only post as characters who are listed as participants in that scene. The character selector is limited to your participating characters for that specific scene.
 
 ---
 
@@ -35,9 +35,9 @@ Each character accumulates their own post statistics. You can view per-character
 
 ---
 
-## Episode history
+## Scene history
 
-A character's profile page includes a list of all episodes they are or have been part of. This gives a quick overview of their story arc across the forum.
+A character's profile page includes a list of all scenes they are or have been part of. This gives a quick overview of their story arc across the forum.
 
 ---
 
@@ -49,8 +49,8 @@ All active characters on the forum are listed on the character list page, groupe
 
 ## Masks
 
-For episode writing, you can create **masks** — separate identities that exist independently of your main characters. A mask has its own name, avatar, and stats, and is listed on your user profile alongside your characters.
+For scene writing, you can create **masks** — separate identities that exist independently of your main characters. A mask has its own name, avatar, and stats, and is listed on your user profile alongside your characters.
 
-Masks are intentionally not listed on the public character list. This means multiple players can hold a mask of the same character — useful for shared NPCs, recurring antagonists, or any role that more than one writer might voice across different episodes.
+Masks are intentionally not listed on the public character list. This means multiple players can hold a mask of the same character — useful for shared NPCs, recurring antagonists, or any role that more than one writer might voice across different scenes.
 
-Masks can only be used in episodes, not in general topics.
+Masks can only be used in scenes, not in general topics.

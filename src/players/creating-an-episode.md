@@ -1,17 +1,17 @@
 ---
-title: Creating an Episode
+title: Creating a Scene
 nav_order: 2
 ---
 
-<p class="docs-lead">An episode is the core unit of play in Cuento — a thread with a cover image, participant list, in-game date, and location. Any member of a subforum can create one.</p>
+<p class="docs-lead">A scene is the core unit of play in Cuento — a thread with a cover image, participant list, in-game date, and location. Any member of a subforum can create one.</p>
 
-## 1. Open the episode creation form
+## 1. Open the scene creation form
 
-Navigate to the game subforum you want to post in and click **Create episode** in the top-right corner of the page. A blank form will open.
+Navigate to the game subforum you want to post in and click **Create game topic** in the top-right corner of the page. A blank form will open.
 
 ## 2. Fill in the title and add characters
 
-Enter the episode title in the **Title** field.
+Enter the scene title in the **Title** field.
 
 Add participating characters using the autocomplete in the **Characters** field: start typing a name, select the character from the dropdown, and click **Add character**. Repeat for each participant. All added characters appear in a list below the input.
 
@@ -35,10 +35,10 @@ Add a short description or epigraph in the **Description** field. The toolbar ab
 
 ## 6. Set the content rating
 
-At the bottom of the form, rate the episode across three dimensions: **Language**, **Violence**, and **Sexual content**. Each dimension is scored 1–3. Click **Help** to open a table that describes each level.
+At the bottom of the form, rate the scene across three dimensions: **Language**, **Violence**, and **Sexual content**. Each dimension is scored 1–3. Click **Help** to open a table that describes each level.
 
 If any dimension is rated **3**, every reader — including guests — will see a content warning before they can open the thread.
 
 ## 7. Submit
 
-Click **Submit**. The episode page opens immediately, showing the cover image, participant list, in-game date, location, and description. It is now open for posts.
+Click **Submit**. The scene page opens immediately, showing the cover image, participant list, in-game date, location, and description. It is now open for posts.

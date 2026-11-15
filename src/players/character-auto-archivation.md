@@ -7,17 +7,17 @@ nav_order: 4
 
 ## When the counter starts
 
-The clock starts from the moment your character **has somewhere to write** — that is, they are in at least one active episode where it is currently their turn.
+The clock starts from the moment your character **has somewhere to write** — that is, they are in at least one active scene where it is currently their turn.
 
-If your character is in one or more episodes but cannot respond in any of them right now, the counter is paused.
+If your character is in one or more scenes but cannot respond in any of them right now, the counter is paused.
 
-> In episodes with three or more participants there is no strict posting order, so the counter turns on as soon as any post is written after yours.
+> In scenes with three or more participants there is no strict posting order, so the counter turns on as soon as any post is written after yours.
 
-## Characters with no active episodes
+## Characters with no active scenes
 
-The counter also applies to new characters and to characters who have no active episodes at all. If you have no active games, you need to find one and open it.
+The counter also applies to new characters and to characters who have no active scenes at all. If you have no active games, you need to find one and open it.
 
-If your last active episode closes and you have no new ones, the counter resets from the moment that last game closed.
+If your last active scene closes and you have no new ones, the counter resets from the moment that last game closed.
 
 ## Declaring an absence
 

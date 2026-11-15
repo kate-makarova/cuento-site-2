@@ -3,14 +3,14 @@ title: Managing Absences
 nav_order: 13
 ---
 
-<p class="docs-lead">If you know you will be unavailable for a period of time, you can register an absence. This pauses the auto-archiving countdown for all of your active characters and notifies your episode co-writers that you are away.</p>
+<p class="docs-lead">If you know you will be unavailable for a period of time, you can register an absence. This pauses the auto-archiving countdown for all of your active characters and notifies your scene co-writers that you are away.</p>
 
 ## What an absence does
 
 An absence is registered against your **user account**, not against individual characters. When an absence is active:
 
 - The auto-archiving inactivity timer is extended for every one of your active characters by the number of days you are absent
-- Your co-participants in active episodes receive a notification that you are away and when you plan to return
+- Your co-participants in active scenes receive a notification that you are away and when you plan to return
 - After the absence ends, all your active characters receive an additional **3-day grace period** so you have time to catch up before archiving resumes
 
 You do not need to do anything character-by-character — a single absence record covers your entire account.

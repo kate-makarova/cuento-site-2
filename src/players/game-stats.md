@@ -3,7 +3,7 @@ title: Game Statistics
 nav_order: 8
 ---
 
-<p class="docs-lead">The statistics page gives everyone — including guests — a live view of forum activity. It shows six summary numbers and five charts covering posts, episodes, characters, and faction activity for any time period you choose.</p>
+<p class="docs-lead">The statistics page gives everyone — including guests — a live view of forum activity. It shows six summary numbers and five charts covering posts, scenes, characters, and faction activity for any time period you choose.</p>
 
 ## Time period
 
@@ -23,10 +23,10 @@ The default on load is **Month to date**. All periods are aligned to your local 
 
 Six numbers appear at the top, each scoped to the selected period:
 
-- **New Episodes** — episodes opened during the period
-- **Finished Episodes** — episodes that reached finished status
-- **Inactivated Episodes** — episodes that were archived
-- **Total Posts** — game posts written (episode posts only, not off-topic discussions)
+- **New Scenes** — scenes opened during the period
+- **Finished Scenes** — scenes that reached finished status
+- **Inactivated Scenes** — scenes that were archived
+- **Total Posts** — game posts written (scene posts only, not off-topic discussions)
 - **Wanted Characters** — wanted character listings created
 - **Accepted Characters** — characters whose sheets were accepted and became active
 
@@ -44,9 +44,9 @@ A horizontal bar chart of the 10 most active writers by game post count for the 
 
 A horizontal bar chart of the 10 most active characters by game post count. Masks (alternate identities a character can post under) appear as their own entries, separate from the character they belong to.
 
-### Episodes by Faction
+### Scenes by Faction
 
-A stacked horizontal bar chart, one bar per faction. Each bar has three segments: **Created** (green), **Finished** (blue), **Archived** (red). An episode is counted under a faction if any of its participating characters belongs to that faction. Factions with no activity in the period are not shown.
+A stacked horizontal bar chart, one bar per faction. Each bar has three segments: **Created** (green), **Finished** (blue), **Archived** (red). A scene is counted under a faction if any of its participating characters belongs to that faction. Factions with no activity in the period are not shown.
 
 ### Posts by Faction
 

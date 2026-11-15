@@ -26,12 +26,12 @@ Income is credited automatically when players take specific actions. Each income
 
 | Event | When it triggers |
 |---|---|
-| Episode post | Each time a player writes a post in an episode topic |
+| Scene post | Each time a player writes a post in a scene topic |
 | Character approved | When a character application is approved |
 | Wanted character created | When a wanted character listing is published |
-| 100th episode post | One-time milestone: player's 100th episode post |
-| 500th episode post | One-time milestone |
-| 1 000th episode post | One-time milestone |
+| 100th scene post | One-time milestone: player's 100th scene post |
+| 500th scene post | One-time milestone |
+| 1 000th scene post | One-time milestone |
 | 100th general post | One-time milestone: player's 100th post in general topics |
 | 500th general post | One-time milestone |
 | 1 000th general post | One-time milestone |

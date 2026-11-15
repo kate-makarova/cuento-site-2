@@ -9,7 +9,7 @@ nav_order: 14
 
 Currency is **per user account** — not per character. All your characters share one balance.
 
-**Income is automatic.** You do not need to claim rewards; they are added to your balance when the qualifying action happens. The most common source is writing episode posts — each post earns a set amount. Other events that may earn currency include having a character approved or creating a wanted character listing. Additionally, the forum may award one-time bonuses when you reach certain post-count milestones.
+**Income is automatic.** You do not need to claim rewards; they are added to your balance when the qualifying action happens. The most common source is writing scene posts — each post earns a set amount. Other events that may earn currency include having a character approved or creating a wanted character listing. Additionally, the forum may award one-time bonuses when you reach certain post-count milestones.
 
 Which income events are active and how much each pays is configured by the administrator — check the [Store](#the-store-page) page to see the current rates on your forum.
 

@@ -43,17 +43,17 @@ File: `src/app/components/footer-statistics/footer-statistics.custom.component.h
 
 Overrides the bottom-of-page stats block. Signals available: `board()` (full board settings and counts), `activeUsers()`, `activeGuests()`, `recentUsers()`, `recentCharacters()`, `recentMode()`. Call `setRecentMode(m)` to switch between user and character recent lists.
 
-### Episode header
+### Scene header
 
 File: `src/app/components/episode-header/episode-header.custom.component.html`
 
-Overrides the header area on episode pages. Exposes the `episode` object (name, status, participating characters and masks, content rating), `customFields[]`, and a `getField(machineName)` helper for conditionally rendering individual fields. Guard with `@if (episode != null)`. Available child component: `app-field-display`.
+Overrides the header area on scene pages. Exposes the `episode` object (name, status, participating characters and masks, content rating), `customFields[]`, and a `getField(machineName)` helper for conditionally rendering individual fields. Guard with `@if (episode != null)`. Available child component: `app-field-display`.
 
 ### Character header
 
 File: `src/app/components/character-sheet-header/character-sheet-header.custom.component.html`
 
-Overrides the header on character sheet pages. Exposes the `character` object (name, avatar, status, factions, episode count), `customFields[]`, and `getField(machineName)`. Admin action methods (`acceptCharacter()`, `deactivateCharacter()`, etc.) and the `canSeeAdminBlock()` signal are available for conditionally showing moderation controls. Guard with `@if (character != null)`.
+Overrides the header on character sheet pages. Exposes the `character` object (name, avatar, status, factions, scene count), `customFields[]`, and `getField(machineName)`. Admin action methods (`acceptCharacter()`, `deactivateCharacter()`, etc.) and the `canSeeAdminBlock()` signal are available for conditionally showing moderation controls. Guard with `@if (character != null)`.
 
 ### Wanted character header
 

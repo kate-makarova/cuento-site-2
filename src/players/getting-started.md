@@ -44,4 +44,4 @@ With an account and a live claim, go to your account menu and select **Create ch
 - **Custom fields** — each forum defines its own fields: background, appearance, faction, abilities, or anything specific to the game's setting. Fill in what is marked required; optional fields can be completed later from the character's profile page.
 - **Avatar** — an image representing your character. You can upload one now or add it later.
 
-When you submit the character sheet, it is linked to your claim record and the wanted character listing is marked as filled. Your character now appears in the forum's character list and can be added to episodes.
+When you submit the character sheet, it is linked to your claim record and the wanted character listing is marked as filled. Your character now appears in the forum's character list and can be added to scenes.

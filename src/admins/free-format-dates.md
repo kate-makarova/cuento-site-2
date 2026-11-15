@@ -9,7 +9,7 @@ nav_order: 8
 
 Standard date fields follow the real-world calendar. If your game is set in Thedas, the Forgotten Realms, or Westeros, those dates mean nothing. A free-format date field lets you define the structure of the in-game calendar once; after that, players fill in the right values and the platform formats and stores the date correctly, including sorting.
 
-A free-format date field can be attached to episode headers, character sheets, character profiles, or wanted character listings through **Admin → Templates**.
+A free-format date field can be attached to scene headers, character sheets, character profiles, or wanted character listings through **Admin → Templates**.
 
 ## Creating a calendar
 
@@ -68,7 +68,7 @@ When a player fills in a date using this calendar, they first pick which format 
 
 Each faction can be assigned one calendar format. Go to **Admin → Factions**, open a faction, and set the **Calendar** field. Multiple factions can share the same calendar — Mass Effect and a modern-day human faction could both use the Gregorian Calendar, for instance.
 
-When a player opens an episode header form with a free-format date field, the platform looks up the factions of all characters selected for that episode and loads their calendars automatically. If two characters come from factions with different calendars, both formats appear and the player picks which one to use for that specific date.
+When a player opens a scene header form with a free-format date field, the platform looks up the factions of all characters selected for that scene and loads their calendars automatically. If two characters come from factions with different calendars, both formats appear and the player picks which one to use for that specific date.
 
 ## Setting a global default
 
@@ -78,8 +78,8 @@ The global calendar is added to the available options alongside any faction-spec
 
 ## Sorting
 
-Dates stored in a free-format field are sortable. The platform encodes the placeholder values into a sortable integer (BIGINT) so that episode lists can be ordered chronologically by in-game date, even when the calendar system has no correspondence to real-world time.
+Dates stored in a free-format field are sortable. The platform encodes the placeholder values into a sortable integer (BIGINT) so that scene lists can be ordered chronologically by in-game date, even when the calendar system has no correspondence to real-world time.
 
-This sort is exposed on the **Episode List** page — players can sort the episode table by any free-format date column you have added to the episode header template. This means your community can browse all active games in in-world chronological order rather than by creation date or last activity.
+This sort is exposed on the **Scene List** page — players can sort the scene table by any free-format date column you have added to the scene header template. This means your community can browse all active games in in-world chronological order rather than by creation date or last activity.
 
 The sort is based on the values of the placeholders in position order. This means the placeholder marked as position 0 is the most significant (like a year), and later positions are less significant. Set up your time units accordingly if chronological sorting matters for your game.

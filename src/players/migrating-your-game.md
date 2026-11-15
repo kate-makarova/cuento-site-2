@@ -3,13 +3,13 @@ title: Migrating Your Game
 nav_order: 5
 ---
 
-<p class="docs-lead">The migration tool lets you import an existing game episode from another platform into Cuento. MyBB-based forums are currently supported. It copies the original posts, lets you map old nicknames to characters on your forum, and publishes the thread as a new episode — preserving authorship, order, and content.</p>
+<p class="docs-lead">The migration tool lets you import an existing game scene from another platform into Cuento. MyBB-based forums are currently supported. It copies the original posts, lets you map old nicknames to characters on your forum, and publishes the thread as a new scene — preserving authorship, order, and content.</p>
 
-The migration section is linked from your user profile next to account settings. Any member of the target episode can run a migration. The process takes a few minutes and requires no technical knowledge.
+The migration section is linked from your user profile next to account settings. Any member of the target scene can run a migration. The process takes a few minutes and requires no technical knowledge.
 
-## Step 1 — Prepare the episode on your forum
+## Step 1 — Prepare the scene on your forum
 
-Before starting, create an episode in Cuento and add all the characters who wrote posts in the original thread. **If even one participating character is missing, the migration cannot complete** — add them to the episode first, then come back.
+Before starting, create a scene in Cuento and add all the characters who wrote posts in the original thread. **If even one participating character is missing, the migration cannot complete** — add them to the scene first, then come back.
 
 ## Step 2 — Fill in the migration form
 
@@ -44,11 +44,11 @@ After processing completes you will see two sections:
 
 **User mapping table** — the left column lists nicknames from the original forum. Use the **Find a character…** search in the right column to pick the matching character on your Cuento forum. Fill in every row. The **Save mapping** button stays disabled until every user has a character assigned.
 
-Once the mapping is saved, a **Publish** section appears at the bottom of the page. Choose the destination episode and click **Publish** — the posts will be created in their original order.
+Once the mapping is saved, a **Publish** section appears at the bottom of the page. Choose the destination scene and click **Publish** — the posts will be created in their original order.
 
 ## Notes
 
-- If you discover a character is missing from the episode mid-migration, add them to the forum and return to finish the mapping.
+- If you discover a character is missing from the scene mid-migration, add them to the forum and return to finish the mapping.
 - The post count may differ by one — the module automatically handles the difference between counting and not counting the opening post.
 - For threads that span multiple pages, you receive one extraction link per page. Process them in order before publishing.
 - After publishing, the migration status changes to **Published** and cannot be re-run for the same record.

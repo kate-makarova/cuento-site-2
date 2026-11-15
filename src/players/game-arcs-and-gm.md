@@ -3,29 +3,29 @@ title: Game Arcs and GM Tools
 nav_order: 9
 ---
 
-<p class="docs-lead">Game arcs group related episodes into a named story. Each arc can have dedicated Game Masters who get extra tools: a GM posting mode that lets them write narrative posts without a character, and a panel to insert named NPCs directly into those posts.</p>
+<p class="docs-lead">Game arcs group related scenes into a named story. Each arc can have dedicated Game Masters who get extra tools: a GM posting mode that lets them write narrative posts without a character, and a panel to insert named NPCs directly into those posts.</p>
 
 ## What is a game arc
 
-An arc is a container for a set of thematically connected episodes. It has a title, description, cover image, one or more associated factions, a list of Game Masters, and a status: **Pending**, **Active**, **Archived**, or **Finished**.
+An arc is a container for a set of thematically connected scenes. It has a title, description, cover image, one or more associated factions, a list of Game Masters, and a status: **Pending**, **Active**, **Archived**, or **Finished**.
 
 Arcs can be public (visible to guests) or private (visible to logged-in members only).
 
-Episodes are assigned to an arc when they are created — a new episode form has an optional arc field. There is no way to move an episode to a different arc after creation.
+Scenes are assigned to an arc when they are created — a new scene form has an optional arc field. There is no way to move a scene to a different arc after creation.
 
 ## Browsing arcs
 
-The arc list is filterable by status, faction, and free-text search. Each arc page shows its description, factions, GMs, and the list of episodes that belong to it.
+The arc list is filterable by status, faction, and free-text search. Each arc page shows its description, factions, GMs, and the list of scenes that belong to it.
 
 ## NPCs
 
-Each arc has its own roster of NPCs — named characters that exist for that story but are not played by any specific member. Each NPC has a name, avatar, and description, and can appear across many episodes within the arc.
+Each arc has its own roster of NPCs — named characters that exist for that story but are not played by any specific member. Each NPC has a name, avatar, and description, and can appear across many scenes within the arc.
 
-You can browse the NPCs attached to an arc from the arc detail page, and click through to an NPC's own page to see which episodes and posts they appear in.
+You can browse the NPCs attached to an arc from the arc detail page, and click through to an NPC's own page to see which scenes and posts they appear in.
 
 ## Game Master posting mode
 
-If you are listed as a GM for an arc, every episode in that arc shows a **GM post** toggle in the reply form. By default it is off — your posts work exactly like any other member's. Switching it on activates GM mode for that post.
+If you are listed as a GM for an arc, every scene in that arc shows a **GM post** toggle in the reply form. By default it is off — your posts work exactly like any other member's. Switching it on activates GM mode for that post.
 
 ### What changes in GM mode
 

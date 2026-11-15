@@ -16,12 +16,12 @@ The wipe permanently removes:
 
 The following content is part of the shared story. It is not deleted — your authorship is severed and the records are reassigned to an anonymous system account:
 
-- Your **game posts** (posts inside episodes)
+- Your **game posts** (posts inside scenes)
 - Your **character sheets** and profiles
 - Your **wanted character entries**
 - Your **lore posts**
 
-This is intentional: removing in-character content would break the narrative for everyone else who participated in those episodes. The content stays; your name does not.
+This is intentional: removing in-character content would break the narrative for everyone else who participated in those scenes. The content stays; your name does not.
 
 ## How to wipe your data
 

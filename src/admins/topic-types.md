@@ -10,7 +10,7 @@ nav_order: 9
 | Type | Purpose | Who creates it |
 |---|---|---|
 | General | Open discussion thread | Users (if permitted) |
-| Episode | Roleplay episode | Users (if permitted) |
+| Scene | Roleplay scene | Users (if permitted) |
 | Character Sheet | Character biography and posts | System (on character creation) |
 | Wanted Character | Character adoption listing | Users (if permitted) |
 | Lore | Wiki-style reference with navigation | Users (if permitted) |
@@ -23,9 +23,9 @@ A standard discussion thread. Any member with the `Create general topic` subforu
 
 ---
 
-## Episode
+## Scene
 
-An episode topic is the main format for roleplay. In addition to being a thread, it carries:
+A scene topic is the main format for roleplay. In addition to being a thread, it carries:
 
 - A **participant list** — which characters (and optional masks) are involved
 - An optional **story arc** assignment
@@ -33,9 +33,9 @@ An episode topic is the main format for roleplay. In addition to being a thread,
 - **GM posting mode** — when a user is listed as a Game Master for the arc, they can post as an NPC rather than as one of their characters (see the [Game Arcs and GM Tools](/players/game-arcs-and-gm.html) article)
 - An `open_to_everyone` flag — when off, only listed participants can post
 
-Mention highlighting (`@username`) is suppressed in episode topics on the assumption that prose-format posts do not need it.
+Mention highlighting (`@username`) is suppressed in scene topics on the assumption that prose-format posts do not need it.
 
-The `Create episode topic` subforum permission controls who can open episodes.
+The `Create scene topic` subforum permission controls who can open scenes.
 
 ---
 
@@ -85,10 +85,10 @@ Admins and topic authors can toggle between Active and Inactive. Full and Delete
 Which topic types users can create is configured per subforum in the subforum permission settings. Each type has its own toggle:
 
 - **Create general topic** — on by default
-- **Create episode topic** — on by default
+- **Create scene topic** — on by default
 - **Create lore topic** — on by default
 - **Create wanted character topic** — off by default; must be explicitly enabled
 
 Character sheet topics are never user-created, so there is no corresponding permission toggle.
 
-You can restrict a subforum to a single type (for example, an episode-only subforum) by turning off the other creation permissions.
+You can restrict a subforum to a single type (for example, a scene-only subforum) by turning off the other creation permissions.

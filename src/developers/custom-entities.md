@@ -3,7 +3,7 @@ title: Custom Entities
 nav_order: 8
 ---
 
-<p class="docs-lead">Cuento lets admins attach arbitrary fields to four entity types: character sheets, character profiles, episode headers, and wanted character listings. Those fields are stored using a two-table EAV+flattened pattern and kept in sync entirely through auto-generated MariaDB triggers — no application-level sync code runs on write.</p>
+<p class="docs-lead">Cuento lets admins attach arbitrary fields to four entity types: character sheets, character profiles, scene headers, and wanted character listings. Those fields are stored using a two-table EAV+flattened pattern and kept in sync entirely through auto-generated MariaDB triggers — no application-level sync code runs on write.</p>
 
 ## Entity types
 
@@ -13,7 +13,7 @@ Four entity types support custom fields. Each maps to its own pair of database t
 |---|---|
 | `character` | Character sheet |
 | `character_profile` | Character profile (secondary display block) |
-| `episode` | Episode header |
+| `episode` | Scene header |
 | `wanted_character` | Wanted character listing |
 
 Each type has a base table (`{name}_base`) managed separately and a custom-field pair described below.

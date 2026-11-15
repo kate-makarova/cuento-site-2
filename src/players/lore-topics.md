@@ -7,7 +7,7 @@ nav_order: 12
 
 ## Creating a lore topic
 
-If the subforum allows it, you will see a **Create lore topic** button in the subforum header alongside the buttons for creating regular topics and episodes. Click it to open the creation form.
+If the subforum allows it, you will see a **Create lore topic** button in the subforum header alongside the buttons for creating regular topics and scenes. Click it to open the creation form.
 
 Fill in:
 - **Title** — the name of the lore article

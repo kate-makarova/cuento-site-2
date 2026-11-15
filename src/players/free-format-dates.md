@@ -3,7 +3,7 @@ title: Free-Format Date Fields
 nav_order: 10
 ---
 
-<p class="docs-lead">Some games use their own fictional calendar instead of real-world dates. When an episode header or character sheet has a free-format date field, the form shows inputs tailored to that game's calendar system, based on which characters are involved.</p>
+<p class="docs-lead">Some games use their own fictional calendar instead of real-world dates. When a scene header or character sheet has a free-format date field, the form shows inputs tailored to that game's calendar system, based on which characters are involved.</p>
 
 ## What you will see
 
@@ -15,11 +15,11 @@ A free-format date field looks different from a regular date picker. Instead of 
 
 ## How formats are loaded
 
-The form uses the characters you have selected for the episode to decide which calendar format to show.
+The form uses the characters you have selected for the scene to decide which calendar format to show.
 
-Each faction in the game can be linked to a calendar format. When you add characters to an episode, the platform looks up which factions those characters belong to and loads the matching calendar formats. If the game has a global default calendar, that format also appears.
+Each faction in the game can be linked to a calendar format. When you add characters to a scene, the platform looks up which factions those characters belong to and loads the matching calendar formats. If the game has a global default calendar, that format also appears.
 
-**If your characters come from different factions with different calendars**, you will see a dropdown to choose which format applies to this particular date. Pick the format that matches the date you are entering. This can happen in multi-faction episodes — for example, if your characters are from both the Dragon Age faction and a faction with a different calendar.
+**If your characters come from different factions with different calendars**, you will see a dropdown to choose which format applies to this particular date. Pick the format that matches the date you are entering. This can happen in multi-faction scenes — for example, if your characters are from both the Dragon Age faction and a faction with a different calendar.
 
 **If the field shows no options**, none of the selected characters belong to a faction with a calendar assigned, and no global default is set. Ask an admin to configure a calendar for your faction.
 
@@ -46,14 +46,14 @@ Each placeholder in the format is one input:
 
 ## How the date is displayed
 
-After saving, the values you filled in are assembled into a formatted string — for example, `9:41 Dragon, 15 of Drakonis (Nubulis)` — and that is what appears in the episode header or on the character sheet. The raw placeholder values are retained internally so the date can be used for sorting.
+After saving, the values you filled in are assembled into a formatted string — for example, `9:41 Dragon, 15 of Drakonis (Nubulis)` — and that is what appears in the scene header or on the character sheet. The raw placeholder values are retained internally so the date can be used for sorting.
 
-The **Episode List** page can sort episodes by this date column, letting everyone browse all active games in in-world chronological order. See the [Episode List](episode-list.html) article for details on sorting and filtering.
+The **Scene List** page can sort scenes by this date column, letting everyone browse all active games in in-world chronological order. See the [Scene List](episode-list.html) article for details on sorting and filtering.
 
-If you go back to edit the episode or character later, the form will re-load the same values and let you change them.
+If you go back to edit the scene or character later, the form will re-load the same values and let you change them.
 
 ## Editing a date from a different character combination
 
-If you open an episode that was created with a different set of characters — and those characters belonged to a faction with a different calendar — the date field may show a **custom** indicator. This means the saved date uses a calendar format that does not match any of the currently selected characters' factions.
+If you open a scene that was created with a different set of characters — and those characters belonged to a faction with a different calendar — the date field may show a **custom** indicator. This means the saved date uses a calendar format that does not match any of the currently selected characters' factions.
 
 You can still edit the value: the form switches to "custom" mode and loads all available calendars so you can re-enter the date in whatever format is appropriate. If you save without changing anything, the date stays as-is.

@@ -3,7 +3,7 @@ title: AI Configuration
 nav_order: 5
 ---
 
-<p class="docs-lead">Cuento's AI layer covers three things: a lore chat assistant that searches your forum's own content, a weekly game digest that auto-summarises episode posts, and an in-editor proofreader. All three share the same configurable model pool — you point Cuento at any provider once and everything uses it.</p>
+<p class="docs-lead">Cuento's AI layer covers three things: a lore chat assistant that searches your forum's own content, a weekly game digest that auto-summarises scene posts, and an in-editor proofreader. All three share the same configurable model pool — you point Cuento at any provider once and everything uses it.</p>
 
 ## What the AI actually does
 
@@ -11,13 +11,13 @@ nav_order: 5
 
 Players open the AI chat and ask questions about the game world. The AI runs a multi-step RAG pipeline: it identifies factions and characters mentioned in the question, searches your forum's posts, lore topics, and character sheets via Qdrant (semantic) and Sonic (keyword), and responds with cited sources. It never makes up information — if something isn't in your forum, it says so.
 
-The AI is faction-aware: if a question is about a specific faction, it filters search results to characters and episodes belonging to that faction before answering.
+The AI is faction-aware: if a question is about a specific faction, it filters search results to characters and scenes belonging to that faction before answering.
 
 ### Weekly game digest
 
-When the game digest feature is enabled, Cuento automatically summarises episode posts. After every new post in an episode thread, the AI reads the post and generates a short summary stored internally. If the post refers to a character or concept the AI doesn't recognise, it sends a clarifying question to the post's author through the AI chat — the author answers, and the AI incorporates the answer before the weekly digest is generated.
+When the game digest feature is enabled, Cuento automatically summarises scene posts. After every new post in a scene thread, the AI reads the post and generates a short summary stored internally. If the post refers to a character or concept the AI doesn't recognise, it sends a clarifying question to the post's author through the AI chat — the author answers, and the AI incorporates the answer before the weekly digest is generated.
 
-At the configured interval, the AI assembles all episode summaries into a full digest post and publishes it under a designated bot account.
+At the configured interval, the AI assembles all scene summaries into a full digest post and publishes it under a designated bot account.
 
 ### Post proofreading
 

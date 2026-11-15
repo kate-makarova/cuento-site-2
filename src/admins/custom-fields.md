@@ -3,7 +3,7 @@ title: Custom Fields
 nav_order: 7
 ---
 
-<p class="docs-lead">Custom fields let you add extra information to character sheets, character profiles, episode headers, and wanted character listings — without touching any code. You define the fields in the admin panel; the platform creates the necessary database columns automatically.</p>
+<p class="docs-lead">Custom fields let you add extra information to character sheets, character profiles, scene headers, and wanted character listings — without touching any code. You define the fields in the admin panel; the platform creates the necessary database columns automatically.</p>
 
 ## Which entities support custom fields
 
@@ -13,10 +13,10 @@ Four entity types can have custom fields:
 |---|---|
 | **Character sheet** | The main character sheet every player fills out |
 | **Character profile** | A secondary info block shown alongside the sheet |
-| **Episode header** | The description and metadata shown at the top of each episode |
+| **Scene header** | The description and metadata shown at the top of each scene |
 | **Wanted character** | Listing posted when a player is looking for a specific character |
 
-Each entity type has its own independent template. Changes to the character sheet template do not affect episode headers, and so on.
+Each entity type has its own independent template. Changes to the character sheet template do not affect scene headers, and so on.
 
 ## Opening the template editor
 
@@ -24,7 +24,7 @@ Each entity type has its own template editor page in the admin panel:
 
 - **Admin → Character template** — character sheet fields
 - **Admin → Character profile template** — character profile fields
-- **Admin → Episode template** — episode header fields
+- **Admin → Scene template** — scene header fields
 - **Admin → Wanted character template** — wanted character listing fields
 
 ## Field names
