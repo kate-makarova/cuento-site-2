@@ -10,31 +10,31 @@ eleventyExcludeFromCollections: true
 ---
 {% for item in collections.devDocs %}
 
-## {{ item.data.title | safe }} (For Developers)
+# {{ item.data.title | safe }} (For Developers)
 
 URL: https://cuento.ca{{ item.url }}
 
-{{ item.content }}
+{{ item.rawInput | safe }}
 
 ---
 {% endfor %}
 {% for item in collections.adminDocs %}
 
-## {{ item.data.title | safe }} (For Administrators)
+# {{ item.data.title | safe }} (For Administrators)
 
 URL: https://cuento.ca{{ item.url }}
 
-{{ item.content }}
+{{ item.rawInput | safe }}
 
 ---
 {% endfor %}
 {% for item in collections.playerDocs %}
 
-## {{ item.data.title | safe }} (For Players)
+# {{ item.data.title | safe }} (For Players)
 
 URL: https://cuento.ca{{ item.url }}
 
-{{ item.content }}
+{{ item.rawInput | safe }}
 
 ---
 {% endfor %}
