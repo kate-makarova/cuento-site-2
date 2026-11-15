@@ -77,11 +77,11 @@ curl -s -o /dev/null -w '%{http_code}\n' http://localhost:8080/active-topics   #
 
 ## 6. Установите Node.js и npm
 
-Для фронтенда требуется Node.js 18.19 или выше. Если у вас его нет, скачайте с [nodejs.org](https://nodejs.org) или используйте менеджер версий `nvm`:
+Для фронтенда требуется Node.js 24 LTS (Angular 22 нужен ^22.22.3, ^24.15 или 26 и выше). Если у вас его нет, скачайте с [nodejs.org](https://nodejs.org) или используйте менеджер версий `nvm`:
 
 ```bash
-nvm install 20
-nvm use 20
+nvm install 24
+nvm use 24
 ```
 
 ## 7. Запустите фронтенд

@@ -77,11 +77,11 @@ curl -s -o /dev/null -w '%{http_code}\n' http://localhost:8080/active-topics   #
 
 ## 6. Install Node.js and npm
 
-The frontend requires Node.js 18.19 or later. If you do not have it installed, download it from [nodejs.org](https://nodejs.org) or use a version manager such as `nvm`:
+The frontend requires Node.js 24 LTS (Angular 22 needs ^22.22.3, ^24.15, or 26 and later). If you do not have it installed, download it from [nodejs.org](https://nodejs.org) or use a version manager such as `nvm`:
 
 ```bash
-nvm install 20
-nvm use 20
+nvm install 24
+nvm use 24
 ```
 
 ## 7. Start the frontend
