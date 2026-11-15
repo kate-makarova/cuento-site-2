@@ -125,19 +125,25 @@ The backend deploy restarts `cuento-backend.service` via systemd. The frontend d
 
 ### Setting a superuser
 
-After the first deploy, the database has no users. Create the first admin account via the **Add user** command in the CLI, then immediately run **Set superuser** to grant it full privileges.
+After the first deploy, the database has no real accounts — only the seeded system users `guest` (ID 0) and `The Nameless One` (ID 1). Create the first admin account via the **Add user** command in the CLI, then immediately run **Set superuser** for it. The first account you create gets **ID 2**.
 
-**Add user** prompts for a username and password, hashes the password with SHA-256 then bcrypt, and inserts a row into the `users` and `user_role` tables directly via SSH into the VPS database.
+**Add user** prompts for a username and password, hashes the password with SHA-256 then bcrypt, and inserts a row into the `users` and `user_role` tables directly via SSH into the VPS database. It always grants the `user` role and adds `admin` if you answer yes to **Make this user an admin?**
 
-**Set superuser** writes a `SUPERUSER_ID` environment variable into the systemd unit file and reloads the service:
+**Set superuser** writes a `SUPERUSER_ID` environment variable into the systemd unit file, then runs `systemctl daemon-reload` and restarts the service:
 
 ```
 # /etc/systemd/system/cuento-backend.service
 [Service]
-Environment="SUPERUSER_ID=1"
+Environment="SUPERUSER_ID=2"
 ```
 
-The superuser bypasses all permission checks and can access the full admin panel at `/admin`. Set this once — the ID never changes unless you explicitly run the command again.
+The backend reads `SUPERUSER_ID` once at startup (`Services/user_service.go`). It is not stored in the database, so it changes only when you run the command again.
+
+What the superuser can do:
+
+- **Exclusive features** — AI model configuration (`Controllers/ai_model.go`), Google Drive backups (`Controllers/backup.go`), and settings flagged `needs_superuser` in `global_settings`, such as API keys (`Controllers/settings.go`). No role grants these.
+- **Endpoint permission bypass** — `Middlewares/permissions.go` skips the `role_permission` endpoint check for the superuser, so it works even before permissions are imported.
+- **Not bypassed** — subforum access rules (type 1 permissions) still apply to the superuser.
 
 ### Importing default permissions
 
