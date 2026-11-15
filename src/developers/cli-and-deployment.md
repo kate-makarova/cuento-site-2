@@ -187,6 +187,36 @@ If you upgrade the CLI to a new version, its embedded workflow YAML files may ha
 
 You can apply individual changes interactively from this screen. Useful for investigating schema drift between your fork and upstream without running a full update.
 
+## Non-interactive mode
+
+Since CLI 2.1.0 the binary also runs single commands from its arguments, so scripts and AI agents can use it. Without arguments it opens the interactive menu as before.
+
+```bash
+cuento-cli list                                         # saved project names
+cuento-cli update --project NAME [--apply-migration]
+cuento-cli diagnostics --project NAME [--json]
+cuento-cli reset-pipeline --project NAME
+```
+
+- **Commands never prompt.** Credentials are read from the project config file below; there are no flags for tokens or passwords.
+- **`update`** prints the migration SQL and stops before merging when the schema changed, unless `--apply-migration` is given — code is never deployed without its schema change.
+- **`diagnostics`** only reports; creating or altering tables stays in the interactive menu. `--json` prints the report as JSON on stdout.
+- **Exit codes:** `0` success, `1` the operation failed, `2` invalid usage.
+
 ## Project config file
 
 Everything the CLI needs to manage an instance is stored in `~/.config/cuento/config.json` (mode 0600). This includes the GitHub token, VPS credentials, SSH key pair, database passwords, and the `setup_step` counter for wizard resume. Back this file up — losing it means re-entering all credentials manually.
+
+<details class="docs-spoiler">
+<summary>AI Agent instruction</summary>
+
+If you are an AI agent managing a Cuento instance with the CLI, follow these rules:
+
+1. **Use the non-interactive commands only.** Never drive the interactive menu by piping answers into it.
+2. **Start read-only.** Run `cuento-cli list` and `cuento-cli diagnostics --project NAME --json` first, and report what you find.
+3. **Updating a production forum is the human's decision.** Ask before running `update` or `reset-pipeline` against any project, even if you were asked to "check" or "prepare" an update.
+4. **Never pass `--apply-migration` on your own.** Run `update` without it, show the human the migration SQL it prints, and only rerun with the flag after they approve that SQL.
+5. **Check the exit code.** `0` means done; `1` means the operation failed — read the output and report it, do not retry blindly; `2` means your command line was wrong.
+6. **Never read, print or edit the config file.** It holds the GitHub token and server passwords.
+
+</details>
