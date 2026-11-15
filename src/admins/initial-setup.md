@@ -61,16 +61,27 @@ Once it completes, navigate to your domain — you should see the Cuento forum.
 
 ## Step 4 — Create the first admin account
 
-The database is empty after first deploy. Use the CLI to create your admin account:
+The database has no real accounts after the first deploy, only two built-in system users: `guest` (ID 0) and `The Nameless One` (ID 1). Use the CLI to create your admin account:
 
 1. Run the CLI and select **Add user**.
-2. Enter a username and password. The CLI connects to your server's database directly and creates the account.
+2. Enter a username and password.
+3. Answer **yes** to **Make this user an admin?** The account gets both the `user` and `admin` roles.
+
+The CLI connects to your server's database directly and creates the account. Because IDs 0 and 1 are taken, **the first account you create has ID `2`**.
 
 ## Step 5 — Set the superuser
 
-The first account needs elevated privileges to access the full admin panel. In the CLI, select **Set superuser** and enter the user ID (this will be `1` for the first account you created).
+The superuser is one specific account with privileges above the admin role. In the CLI, select **Set superuser** and enter the user ID (`2` for the first account you created).
 
-This writes a `SUPERUSER_ID` environment variable into the backend service and reloads it. The superuser bypasses all permission checks and has unrestricted access to the admin panel at `/admin`.
+This writes a `SUPERUSER_ID` environment variable into the backend service and restarts it. The superuser is not stored in the database, so it survives database restores but changes only when you run this command again.
+
+Only the superuser can:
+
+- configure AI models
+- run and manage Google Drive backups
+- view and edit sensitive settings, such as API keys
+
+The superuser also skips the endpoint permission table, so it can call every admin endpoint even before permissions are imported. It does **not** skip subforum access rules — those are granted per subforum as for any other user (Step 8).
 
 ## Step 6 — Import default permissions
 
